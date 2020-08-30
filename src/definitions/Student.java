@@ -95,6 +95,37 @@ public class Student {
         this.nameOfBooksIssuedToStudent = nameOfBooksIssuedToStudent;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentFullName='" + studentFullName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", universityRollNumber=" + universityRollNumber +
+                ", numberOfBooksIssuedToStudent=" + numberOfBooksIssuedToStudent +
+                ", nameOfBooksIssuedToStudent=" + Arrays.toString(nameOfBooksIssuedToStudent) +
+                '}';
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student)) return false;
+        Student student = (Student) o;
+        return getUniversityRollNumber() == student.getUniversityRollNumber() &&
+                getNumberOfBooksIssuedToStudent() == student.getNumberOfBooksIssuedToStudent() &&
+                Objects.equals(getStudentFullName(), student.getStudentFullName()) &&
+                Objects.equals(getFirstName(), student.getFirstName()) &&
+                Objects.equals(getMiddleName(), student.getMiddleName()) &&
+                Objects.equals(getLastName(), student.getLastName()) &&
+                Arrays.equals(getNameOfBooksIssuedToStudent(), student.getNameOfBooksIssuedToStudent());
+    }
 
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(getStudentFullName(), getFirstName(), getMiddleName(), getLastName(), getUniversityRollNumber(), getNumberOfBooksIssuedToStudent());
+        result = 31 * result + Arrays.hashCode(getNameOfBooksIssuedToStudent());
+        return result;
+    }
 }
