@@ -16,4 +16,8 @@ public class FrontDesk {
     private static final int SHOW_ALL_ISSUED_BOOKS = 3;
     private static final int EXIT = 4;
 
+    public static void main(String[] args) {
+
+    }
+
 }
