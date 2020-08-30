@@ -10,7 +10,6 @@ import definitions.Book;
 import definitions.Library;
 import definitions.Student;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class FrontDesk {
@@ -53,7 +52,7 @@ public class FrontDesk {
             customerInput = scanner.nextInt();
             switch (customerInput) {
                 case ISSUE_NEW_BOOK:
-                    Scanner scanner1=new Scanner(System.in);
+                    Scanner scanner1 = new Scanner(System.in);
                     String bookName;
                     System.out.println("Enter the name of book you want");
                     bookName = scanner1.nextLine();
