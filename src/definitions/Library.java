@@ -53,6 +53,30 @@ public class Library {
         return Arrays.hashCode(getAvailableBooks());
     }
 
+    /**
+     * This method will allow us to issue a book from Library.
+     *
+     * @param nameOfBook name of book which we want.
+     */
+    public void issueBook(String nameOfBook) {
+        System.out.println("Book Name \"" + nameOfBook + "\" assigned to You");
+    }
+
+    /**
+     * This method will allow us to see previous books issued to student.
+     *
+     * @param studentName name of book which we want.
+     * @param rollNumber  name of book which we want.
+     * @param books       name of book which we want.
+     */
+    public void issuedBooksToStudent(String studentName, long rollNumber, Book[] books) {
+        System.out.println("books assigned to  " + studentName + " roll number " + rollNumber + " are: " + Arrays.toString(books));
+    }
+
+    /**
+     * this method is allow us to return book to Library.
+     */
+
 
 
     }
