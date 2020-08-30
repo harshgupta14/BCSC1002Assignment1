@@ -24,4 +24,15 @@ public class Library {
         Book[] books = new Book[]{book1, book2, book3, book4};
         this.availableBooks = books;
     }
+
+    public Book[] getAvailableBooks() {
+        return availableBooks;
+    }
+
+    public void setAvailableBooks(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
+
+
+
     }
