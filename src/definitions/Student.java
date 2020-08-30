@@ -39,5 +39,62 @@ public class Student {
 
     }
 
+    public String getStudentFullName() {
+        return studentFullName;
+    }
+
+    public void setStudentFullName(String studentFullName) {
+        this.studentFullName = studentFullName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+
+    public int getNumberOfBooksIssuedToStudent() {
+        return numberOfBooksIssuedToStudent;
+    }
+
+    public void setNumberOfBooksIssuedToStudent(int numberOfBooksIssuedToStudent) {
+        this.numberOfBooksIssuedToStudent = numberOfBooksIssuedToStudent;
+    }
+
+    public Book[] getNameOfBooksIssuedToStudent() {
+        return nameOfBooksIssuedToStudent;
+    }
+
+    public void setNameOfBooksIssuedToStudent(Book[] nameOfBooksIssuedToStudent) {
+        this.nameOfBooksIssuedToStudent = nameOfBooksIssuedToStudent;
+    }
+
+
 
 }
