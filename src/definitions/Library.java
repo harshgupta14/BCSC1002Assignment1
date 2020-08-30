@@ -16,4 +16,12 @@ public class Library {
         this.availableBooks = availableBooks;
     }
 
+    public Library() {
+        Book book1 = new Book("java for beginners", "Roy", "123456789S234");
+        Book book2 = new Book("Electronic engineering", "Troy", "121356789X237");
+        Book book3 = new Book("C language", "Steve", "153456789A239");
+        Book book4 = new Book("Engineering mathematics", "Justin", "624456789C238");
+        Book[] books = new Book[]{book1, book2, book3, book4};
+        this.availableBooks = books;
+    }
     }
