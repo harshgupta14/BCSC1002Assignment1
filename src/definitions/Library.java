@@ -10,5 +10,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Library {
+    private Book[] availableBooks;
+
+    public Library(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
 
     }
