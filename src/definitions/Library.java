@@ -77,6 +77,11 @@ public class Library {
      * this method is allow us to return book to Library.
      */
 
-
-
+    public void returnBook() {
+        String bookName;
+        System.out.println("Enter the name which you want to return");
+        Scanner scanner = new Scanner(System.in);
+        bookName = scanner.nextLine();
+        System.out.println("Thank you for returning book: \"" + bookName + "\"");
     }
+}
