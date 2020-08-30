@@ -6,8 +6,16 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
-
+    private String studentFullName;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private long universityRollNumber;
+    private int numberOfBooksIssuedToStudent;
+    private Book[] nameOfBooksIssuedToStudent;
 
 }
