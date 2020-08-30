@@ -43,7 +43,33 @@ public class FrontDesk {
         Student student = new Student(studentName, universityRollNumber, issuedBooks.length, issuedBooks);
         Library library = new Library();
         System.out.println("******************************************************************************");
-
+        do {
+            System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-\n");
+            System.out.println("How may I help you today?\n");
+            System.out.println("1. Issue a new book for me.\n");
+            System.out.println("2. Return a previously issues book for me.\n");
+            System.out.println("3. Show me all my issues books.\n");
+            System.out.println("4. Exit.\n");
+            customerInput = scanner.nextInt();
+            switch (customerInput) {
+                case ISSUE_NEW_BOOK:
+                    Scanner scanner1=new Scanner(System.in);
+                    String bookName;
+                    System.out.println("Enter the name of book you want");
+                    bookName = scanner1.nextLine();
+                    library.issueBook(bookName);
+                    break;
+                case RETURN_BOOK:
+                    library.returnBook();
+                    break;
+                case SHOW_ALL_ISSUED_BOOKS:
+                    library.issuedBooksToStudent(studentName, universityRollNumber, issuedBooks);
+                    break;
+                default:
+                    break;
+            }
+        }
+        while (customerInput != EXIT);
+        scanner.close();
     }
-
 }
